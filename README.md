@@ -61,6 +61,20 @@ Or on Windows:
 $env:OPENAI_API_KEY="your-api-key"
 ```
 
+## Docker
+
+Build and run the application using Docker:
+
+```bash
+# Build the image
+docker build -t rlm-demo .
+
+# Run the container
+docker run -p 8501:8501 --env-file .env rlm-demo
+```
+
+The app will be available at `http://localhost:8501`
+
 ## Screenshot
 
 ```
@@ -86,6 +100,14 @@ $env:OPENAI_API_KEY="your-api-key"
   - `rlm_repl.py` - RLM with REPL environment
   - `repl.py` - REPL execution environment
   - `utils/prompts.py` - System prompts and templates
+
+## Author
+
+Made by [Lawrence Teixeira](https://www.linkedin.com/in/lawrenceteixeira/)
+
+## Links
+
+- [Lawrence's Blog](https://lawrence.eti.br/)
 
 ## License
 
